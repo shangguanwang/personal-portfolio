@@ -3,11 +3,12 @@ import headshot from "../assets/images/headshot.jpeg";
 
 const About = () => {
   return (
-    <div>
-      <div className="flex justify-center items-center p-4">
+    <div id="about">
+      <div className="flex justify-center items-center p-12">
         <div className="mr-5 text-xl">
           <h1>Hello, I'm</h1>
           <h1>Shangguan Wang</h1>
+          <h1>Front end Developer</h1>
         </div>
         <div className="ml-5">
           <img
