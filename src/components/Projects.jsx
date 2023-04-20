@@ -29,13 +29,13 @@ const ProjectContent = () => {
     imgAlt: "Mortgage Calculator Screenshot",
     title: "Mortgage Calculator",
     description: "Simple Mortgage Calculator",
-    techStack: ["React", "Material UI", "Netlify"],
+    techStack: ["React.js", "Material UI", "Netlify"],
     liveUrl: "https://shangguan-mortgage-calculator.netlify.app/",
     githubUrl: "https://github.com/shangguanwang/mortgage-calculator",
   };
   return (
     <div id="projects">
-      <div className="px-5 bg-gray-200 flex flex-col justify-center">
+      <div className="p-5 bg-stone-200 flex flex-col justify-center">
         <h1 className="text-xl font-bold pt-4">Projects</h1>
         <ProjectBlock projectdata={project1} />
         <ProjectBlock projectdata={project2} />

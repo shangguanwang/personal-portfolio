@@ -3,8 +3,8 @@ import React from "react";
 const Navbar = () => {
   return (
     <header>
-      <div className="fixed bg-white w-full shadow">
-        {/* make nav bar stick at the top, take the full width, and add a shadow effect */}
+      {/* make nav bar stick at the top and is above any other content on the page, take the full width, and add a shadow effect */}
+      <div className="z-50 fixed bg-white w-full shadow">
         <nav className="flex justify-end">
           {/* move nav bar to the right of the page */}
           <ul className="flex py-3">
