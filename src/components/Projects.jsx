@@ -3,7 +3,7 @@ import ProjectBlock from "./ProjectBlock";
 
 import littlejoy from "../assets/images/little-joy-screenshot.png";
 import restaurantimg from "../assets/images/restaurant-screenshot.png";
-import mortgagecalculatorimg from "../assets/images/mortage-calculator-screenshot.png"
+import mortgagecalculatorimg from "../assets/images/mortage-calculator-screenshot.png";
 
 const ProjectContent = () => {
   const project1 = {
@@ -36,10 +36,10 @@ const ProjectContent = () => {
   return (
     <div id="projects">
       <div className="px-5 bg-gray-200 flex flex-col justify-center">
-      <h1 className="text-xl font-bold pt-4">Projects</h1>
+        <h1 className="text-xl font-bold pt-4">Projects</h1>
         <ProjectBlock projectdata={project1} />
-        <ProjectBlock projectdata={project2}/>
-        <ProjectBlock projectdata={project3}/>
+        <ProjectBlock projectdata={project2} />
+        <ProjectBlock projectdata={project3} />
       </div>
     </div>
   );

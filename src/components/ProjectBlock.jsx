@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import TechStackBadge from "./TechStackBadge";
 import githubsvg from "../assets/svgs/github.svg";
 import linksvg from "../assets/svgs/link.svg";
