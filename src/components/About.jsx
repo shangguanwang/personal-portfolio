@@ -32,7 +32,7 @@ const About = () => {
         {/*Text */}
         <div className="mr-5 mt-5">
           <h1 className="text-5xl">Hello, I'm Shangguan Wang</h1>
-          <h1 className="text-3xl">Front end Developer</h1>
+          <h1 className="text-3xl mt-3 mb-5">Front end Developer</h1>
           {/* Social Icon */}
           <div className="flex justify-center items-center mt-1">
             <a
@@ -55,7 +55,7 @@ const About = () => {
             </a>
           </div>
           <div>
-            <p className="text-xl">
+            <p className="text-xl mt-3">
               Coding is a craft, and I love bringing ideas to life🌟
             </p>
           </div>

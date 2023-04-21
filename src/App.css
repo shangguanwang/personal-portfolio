@@ -2,11 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
-  html {
-    font-family: 
-  }
-} */
+
+/* Style the Nav Bar with Underline */
+.nav_link::after {
+  content: '';
+  height:4px;
+  width:100%;
+  background-color: orange;
+  display: block;
+  opacity: 0;
+  transition: all 0.4s;
+  pointer-events: none;
+}
+
+.nav_link:hover::after {
+  opacity: 1;
+}
 
 
 .App {
