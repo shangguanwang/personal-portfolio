@@ -23,12 +23,13 @@ const techs = [
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <div>
+    <div className="flex justify-center items-center">
       <p>Built using:</p>
-      <div className="flex justify-center">
+      {/* tech stack icons */}
+      <div className="flex justify-center m-2">
         {techs.map((tech) => (
           <Tooltip title={tech.content}>
-            <img className="w-10" src={tech.image} alt="tech" />
+            <img className="w-5 lg:w-10" src={tech.image} alt="tech" />
           </Tooltip>
         ))}
       </div>

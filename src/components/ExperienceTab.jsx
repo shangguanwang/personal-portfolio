@@ -15,23 +15,25 @@ const skillLst = [
   "Github",
 ];
 
+// Setup Use State for Tab Flip
 const ExperienceTab = () => {
   const [value, setValue] = useState(0);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+
   return (
     <div>
-      <Tabs value={value} onChange={handleChange}>
+      <Tabs variant="scrollable" value={value} onChange={handleChange}>
         <Tab label="Skills"></Tab>
         <Tab label="Experience"></Tab>
         <Tab label="Education"></Tab>
       </Tabs>
       {/* Tab 1 Skill Content */}
       {value === 0 && (
-        <Box style={{ height: "100px" }}>
-          <ul className="pt-5 flex">
+        <Box style={{ height: "160px" }}>
+          <ul className="pt-5 flex flex-wrap">
             {skillLst.map((itm) => (
               <TechStackBadge skill={itm} />
             ))}
@@ -40,7 +42,7 @@ const ExperienceTab = () => {
       )}
       {/* Tab 2 Experience Content */}
       {value === 1 && (
-        <Box style={{ height: "100px" }}>
+        <Box style={{ height: "160px" }}>
           <div>
             <p className="text-gray-600">2019-2023</p>
             <p>
@@ -63,7 +65,7 @@ const ExperienceTab = () => {
       )}
       {/* Tab 3 Education Content */}
       {value === 2 && (
-        <Box style={{ height: "100px" }}>
+        <Box style={{ height: "160px" }}>
           <div>
             <p className="text-gray-600">2023</p>
             <p>Scrimba | Frontend Developer Career Path Bootcamp</p>

@@ -5,7 +5,7 @@ const Navbar = () => {
     <header>
       {/* make nav bar stick at the top and is above any other content on the page, take the full width, and add a shadow effect */}
       <div className="z-50 fixed bg-white w-full shadow">
-        <nav className="flex justify-end">
+        <nav className="flex justify-center lg:justify-end">
           {/* move nav bar to the right of the page */}
           <ul className="flex py-3">
             {/* make nav bar horizontal flex */}
