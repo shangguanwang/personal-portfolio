@@ -19,9 +19,32 @@
   opacity: 1;
 }
 
+/* Job Title Blink Color Effect */
+.title_blink {
+  text-shadow: 0 0 10px orange;
+  animation:blink 4s infinite;
+}
+
+@keyframes blink {
+  50% {
+    text-shadow: none;
+  }
+}
+
+/* Subsection Border */
+#subsection-title {
+  border-bottom:4px solid orange;
+  display: table-cell; /* restrict border width to text width */
+  width:100px;
+}
+
+
+/*============================*/
 
 .App {
   text-align: center;
+  font-family: 'Fira Mono', monospace;
+  font-family: 'Mulish', sans-serif;
 }
 
 .App-logo {

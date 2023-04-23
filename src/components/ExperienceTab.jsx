@@ -15,7 +15,6 @@ const skillLst = [
   "Github",
 ];
 
-
 const ExperienceTab = () => {
   const [value, setValue] = useState(0);
 
@@ -44,11 +43,21 @@ const ExperienceTab = () => {
         <Box style={{ height: "100px" }}>
           <div>
             <p className="text-gray-600">2019-2023</p>
-            <p>Accenture | Bid Manager</p>
+            <p>
+              <a href="https://www.accenture.com/" target="_blank">
+                Accenture
+              </a>{" "}
+              | Bid Manager
+            </p>
           </div>
           <div className="mt-1">
             <p className="text-gray-600">2018</p>
-            <p>Geico | Analytics Intern</p>
+            <p>
+              <a href="https://www.geico.com/" target="_blank">
+                Geico
+              </a>{" "}
+              | Analytics Intern
+            </p>
           </div>
         </Box>
       )}
@@ -57,8 +66,16 @@ const ExperienceTab = () => {
         <Box style={{ height: "100px" }}>
           <div>
             <p className="text-gray-600">2023</p>
-            <p>Scrimba | Frontend Developer Career Path</p>
-            <p>FreeCodeCamp | Responsive Web Design</p>
+            <p>Scrimba | Frontend Developer Career Path Bootcamp</p>
+            <p>
+              FreeCodeCamp |{" "}
+              <a
+                href="https://www.freecodecamp.org/certification/Shangguan_Wang/responsive-web-design"
+                target="_blank"
+              >
+                Responsive Web Design Certificate
+              </a>{" "}
+            </p>
           </div>
           <div className="mt-1">
             <p className="text-gray-600">2015-2019</p>

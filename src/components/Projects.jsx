@@ -3,7 +3,7 @@ import ProjectBlock from "./ProjectBlock";
 
 import littlejoy from "../assets/images/little-joy-screenshot.png";
 import restaurantimg from "../assets/images/restaurant-screenshot.png";
-import mortgagecalculatorimg from "../assets/images/mortage-calculator-screenshot.png";
+import comingsoonimg from "../assets/images/coming-soon.png";
 
 const ProjectContent = () => {
   const project1 = {
@@ -25,21 +25,21 @@ const ProjectContent = () => {
     githubUrl: "https://github.com/shangguanwang/Restaurant-Clone",
   };
   const project3 = {
-    imgUrl: mortgagecalculatorimg,
-    imgAlt: "Mortgage Calculator Screenshot",
-    title: "Mortgage Calculator",
-    description: "Simple Mortgage Calculator",
-    techStack: ["React.js", "Material UI", "Netlify"],
-    liveUrl: "https://shangguan-mortgage-calculator.netlify.app/",
-    githubUrl: "https://github.com/shangguanwang/mortgage-calculator",
+    imgUrl: comingsoonimg,
+    imgAlt: "Coming Soon Screenshot",
+    title: "Book Management System (WIP)",
+    description: "Single page application to manage book inventory data",
+    techStack: ["TBD"],
   };
   return (
     <div id="projects">
-      <div className="p-5 bg-stone-200 flex flex-col justify-center">
-        <h1 className="text-xl font-bold pt-4">Projects</h1>
+      <div className="p-10 bg-stone-200 flex flex-col justify-center">
+        <div id="subsection-title" className="ml-24">
+          <h1 className="text-2xl font-bold pt-4">Projects</h1>
+        </div>
         <ProjectBlock projectdata={project1} />
         <ProjectBlock projectdata={project2} />
-        <ProjectBlock projectdata={project3} />
+        <ProjectBlock projectdata={project3} isThird={true} />
       </div>
     </div>
   );

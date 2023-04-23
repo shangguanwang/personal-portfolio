@@ -27,12 +27,14 @@ const About = () => {
   });
 
   return (
-    <div id="about" className="bg-watercolor-pattern bg-center bg-cover">
+    <div className="bg-watercolor-pattern bg-center bg-cover">
       <div className="flex justify-center items-center p-12">
         {/*Text */}
         <div className="mr-5 mt-5">
-          <h1 className="text-5xl">Hello, I'm Shangguan Wang</h1>
-          <h1 className="text-3xl mt-3 mb-5">Front end Developer</h1>
+          <h1 className="text-4xl">Hello, I'm Shangguan Wang</h1>
+          <h1 className="text-5xl mt-3 mb-5">
+            <span className="title_blink">Front end Developer</span>
+          </h1>
           {/* Social Icon */}
           <div className="flex justify-center items-center mt-1">
             <a
@@ -56,17 +58,18 @@ const About = () => {
           </div>
           <div>
             <p className="text-xl mt-3">
-              Coding is a craft, and I love bringing ideas to life🌟
+              Coding is a craft, <br />
+              and I love bringing ideas to life🌟
             </p>
           </div>
         </div>
         {/* Lottie Animation */}
         <div className="container w-1/3" ref={container}></div>
       </div>
-      {/* Bio */}
-      <div className="mx-24 flex">
+      {/* About Bio */}
+      <div id="about" className="mx-24 flex pt-8">
         {/* Profile Photo */}
-        <div className="ml-6 mr-12">
+        <div className="ml-6 mr-12 pt-10">
           <img
             src={headshot}
             className="rounded-full"
@@ -74,12 +77,19 @@ const About = () => {
           />
         </div>
         <div className="mx-15 pb-4 my-4">
+          <div id="subsection-title">
+            <h1 className="text-left text-2xl font-bold">About</h1>
+          </div>
           <p className="text-left mr-4">
             My first exposure to coding was in college when I taught myself
             Python for data analytics research.
             <br />
             After graduation, I continue to immerse myself in the tech world
-            working at Accenture as a bid manager.
+            working at{" "}
+            <a href="https://www.accenture.com/" target="_blank">
+              Accenture
+            </a>{" "}
+            as a bid manager.
             <br />
             The desire to build things were so strong that I started
             self-studying frontend development.
