@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-awesome-reveal";
 import ProjectBlock from "./ProjectBlock";
 
 import littlejoy from "../assets/images/little-joy-screenshot.png";
@@ -39,9 +40,11 @@ const ProjectContent = () => {
           <h1 className="text-lg lg:text-2xl font-bold pt-4">Projects</h1>
         </div>
         {/* Projects */}
-        <ProjectBlock projectdata={project1} />
-        <ProjectBlock projectdata={project2} />
-        <ProjectBlock projectdata={project3} isThird={true} />
+        <Fade duration="1500">
+          <ProjectBlock projectdata={project1} />
+          <ProjectBlock projectdata={project2} />
+          <ProjectBlock projectdata={project3} isThird={true} />
+        </Fade>
       </div>
     </div>
   );
