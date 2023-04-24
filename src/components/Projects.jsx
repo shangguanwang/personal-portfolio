@@ -40,7 +40,7 @@ const ProjectContent = () => {
           <h1 className="text-lg lg:text-2xl font-bold pt-4">Projects</h1>
         </div>
         {/* Projects */}
-        <Fade duration="1500">
+        <Fade duration="1500" triggerOnce="true">
           <ProjectBlock projectdata={project1} />
           <ProjectBlock projectdata={project2} />
           <ProjectBlock projectdata={project3} isThird={true} />
