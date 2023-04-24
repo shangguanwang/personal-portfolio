@@ -21,19 +21,6 @@ const techs = [
   },
 ];
 
-// Update Page View Counts
-updateVisitCount();
-const countEl = document.getElementById("viewcount");
-function updateVisitCount() {
-  fetch(
-    "https://api.countapi.xyz/update/shangguan.dev/personalwebsite/?amount=1"
-  )
-    .then((res) => res.json())
-    .then((res) => {
-      countEl.innerHTML = res.value;
-    });
-}
-
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
@@ -50,11 +37,6 @@ const Footer = () => {
         </div>
         <p>© {year} by Shangguan Wang</p>
       </div>
-      {/* Page Views */}
-      <p>
-        {" "}
-        <span id="viewcount"></span> views
-      </p>
     </div>
   );
 };
