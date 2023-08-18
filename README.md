@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Shangguan's Personal Portfolio Website
+You can check out the site here: https://shangguanw.com/
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
