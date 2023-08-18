@@ -8,9 +8,6 @@ import linkedin from "../assets/images/linkedin.png";
 import githubsvg from "../assets/svgs/github.svg";
 
 const Hero = () => {
-  {
-    /* Set up Lottie Animation */
-  }
   const container = useRef(null);
   useEffect(() => {
     const instance = lottie.loadAnimation({
@@ -30,7 +27,7 @@ const Hero = () => {
       <div className="lg:flex justify-center items-center pt-12">
         {/*Text */}
         <div className="mr-5 mt-5">
-          <Slide triggerOnce='true'>
+          <Slide triggerOnce="true">
             <h1
               className="pr-3 text-xl md:text-2xl lg:text-4xl"
               id="greeting-heading"
@@ -38,7 +35,7 @@ const Hero = () => {
               Hello, I'm Shangguan Wang
             </h1>
             <h1 className="text-xl md:text-2xl lg:text-5xl mt-3 mb-5">
-              <span className="title_blink">Front end Developer</span>
+              <span className="title_blink">Frontend Developer</span>
             </h1>
             {/* Social Icon */}
             <div className="flex justify-center items-center mt-1">
@@ -46,6 +43,7 @@ const Hero = () => {
                 href="https://www.linkedin.com/in/shangguan-wang/"
                 target="_blank"
                 className="mr-8"
+                rel="noopener noreferrer"
               >
                 <img
                   className="w-6 lg:w-8 hover:animate-pulse"
@@ -53,7 +51,11 @@ const Hero = () => {
                   alt="social icon"
                 ></img>
               </a>
-              <a href="https://github.com/shangguanwang" target="_blank">
+              <a
+                href="https://github.com/shangguanwang"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   className="w-6 lg:w-8 hover:animate-pulse"
                   src={githubsvg}
@@ -73,7 +75,7 @@ const Hero = () => {
         <div className="container lg:w-1/3" ref={container}></div>
       </div>
       {/* About Bio Section */}
-      <Fade delay="90" triggerOnce='true'>
+      <Fade delay="90" triggerOnce="true">
         <About />
       </Fade>
     </div>

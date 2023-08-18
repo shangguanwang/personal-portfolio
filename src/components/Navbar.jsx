@@ -24,8 +24,19 @@ const Navbar = () => {
                 className="nav_link"
                 href="https://dev.to/shangguanwang"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Blog
+              </a>
+            </li>
+            <li className="mx-4">
+              <a
+                className="nav_link"
+                href="https://github.com/shangguanwang/resume/blob/e3ab790f7b92764969622b7457b6e875904d8e13/Resume_Shangguan_Wang.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Resume
               </a>
             </li>
           </ul>

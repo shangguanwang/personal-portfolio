@@ -3,7 +3,7 @@ import TechStackBadge from "./TechStackBadge";
 import githubsvg from "../assets/svgs/github.svg";
 import linksvg from "../assets/svgs/link.svg";
 
-const Projects = ({ projectdata, isThird }) => {
+const Projects = ({ projectdata, isBlur }) => {
   const { imgUrl, imgAlt, title, description, techStack, liveUrl, githubUrl } =
     projectdata; //Props Destructuring
 
@@ -16,7 +16,7 @@ const Projects = ({ projectdata, isThird }) => {
           {/*Project Screenshot */}
           <img
             className={`lg:mx-24 pt-5 rounded-lg w-1/3 ${
-              isThird ? "filter blur-sm hover:blur-none" : ""
+              isBlur ? "filter blur-sm hover:blur-none" : ""
             }`}
             src={imgUrl}
             alt={imgAlt}
@@ -34,21 +34,23 @@ const Projects = ({ projectdata, isThird }) => {
               ))}
             </ul>
             {/*Live Link and Github Link Icons */}
-            {!isThird && (
+            {!isBlur && (
               <div className="flex pt-5 justify-center">
                 <a
                   className="w-10 h-10 mr-8 hover:animate-bounce"
                   href={liveUrl}
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <img src={linksvg} className="cursor-pointer" />
+                  <img src={linksvg} className="cursor-pointer" alt="" />
                 </a>
                 <a
                   className="w-10 h-10 hover:animate-bounce"
                   href={githubUrl}
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <img src={githubsvg} className="cursor-pointer" />
+                  <img src={githubsvg} className="cursor-pointer" alt="" />
                 </a>
               </div>
             )}

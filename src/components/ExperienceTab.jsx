@@ -5,6 +5,7 @@ import TechStackBadge from "./TechStackBadge";
 const skillLst = [
   "React.js",
   "JavaScript",
+  "TypeScript",
   "HTML",
   "CSS",
   "Tailwind CSS",
@@ -12,6 +13,7 @@ const skillLst = [
   "Python",
   "SQL",
   "Firebase",
+  "Git",
   "Github",
 ];
 
@@ -44,9 +46,19 @@ const ExperienceTab = () => {
       {value === 1 && (
         <Box style={{ height: "160px" }}>
           <div>
+            <p className="text-gray-600">2023-Present</p>
+            <p>
+              <a href="https://the-collab-lab.codes/" target="_blank" rel="noopener noreferrer">
+                The Collab Lab
+              </a>{" "}
+              | Software Engineer
+            </p>
+          </div>
+          <div className="mt-1"></div>
+          <div>
             <p className="text-gray-600">2019-2023</p>
             <p>
-              <a href="https://www.accenture.com/" target="_blank">
+              <a href="https://www.accenture.com/" target="_blank" rel="noopener noreferrer">
                 Accenture
               </a>{" "}
               | Bid Manager
@@ -55,7 +67,7 @@ const ExperienceTab = () => {
           <div className="mt-1">
             <p className="text-gray-600">2018</p>
             <p>
-              <a href="https://www.geico.com/" target="_blank">
+              <a href="https://www.geico.com/" target="_blank" rel="noopener noreferrer">
                 Geico
               </a>{" "}
               | Analytics Intern
@@ -74,6 +86,7 @@ const ExperienceTab = () => {
               <a
                 href="https://www.freecodecamp.org/certification/Shangguan_Wang/responsive-web-design"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Responsive Web Design Certificate
               </a>{" "}

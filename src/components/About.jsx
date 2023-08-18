@@ -25,7 +25,7 @@ const About = () => {
           <br />
           After graduation, I continue to immerse myself in the tech world
           working at{" "}
-          <a href="https://www.accenture.com/" target="_blank">
+          <a href="https://www.accenture.com/" target="_blank" rel="noopener noreferrer">
             Accenture
           </a>{" "}
           as a bid manager.
@@ -33,7 +33,14 @@ const About = () => {
           The desire to build things were so strong that I started self-studying
           frontend development.
           <br />
-          When I'm not coding, I podcast🎙️, play ukulele🎸, and write blogs🖊️.
+          I'm currently working at{" "}
+          <a href="https://the-collab-lab.codes/" target="_blank" rel="noopener noreferrer">
+            The Collab Lab
+          </a>{" "}
+          as a software engineer.
+          <br />
+          When I'm not coding, I record podcast🎙️, play ukulele🎸, and write
+          blogs🖊️.
         </p>
         {/* Tabs */}
         <ExperienceTab />
