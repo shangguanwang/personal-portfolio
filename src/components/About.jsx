@@ -19,27 +19,34 @@ const About = () => {
         <div id="subsection-title">
           <h1 className="text-left text-lg lg:text-2xl font-bold">About</h1>
         </div>
-        <p className="text-left lg:mr-4">
+        <p className="text-left lg:mr-4 leading-8">
           My first exposure to coding was in college when I taught myself Python
           for data analytics research.
           <br />
           After graduation, I continue to immerse myself in the tech world
           working at{" "}
-          <a href="https://www.accenture.com/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.accenture.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Accenture
           </a>{" "}
           as a bid manager.
           <br />
-          The desire to build things were so strong that I started self-studying
-          frontend development.
+          The desire to build things led me to become a developer.
           <br />
           I'm currently working at{" "}
-          <a href="https://the-collab-lab.codes/" target="_blank" rel="noopener noreferrer">
-            The Collab Lab
-          </a>{" "}
+          <a
+            href="https://the-collab-lab.codes/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            The Collab Lab{" "}
+          </a>
           as a software engineer.
           <br />
-          When I'm not coding, I record podcast🎙️, play ukulele🎸, and write
+          When I'm not coding, I record podcast🎙️, make memes🖼️, and write
           blogs🖊️.
         </p>
         {/* Tabs */}
