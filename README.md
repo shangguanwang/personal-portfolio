@@ -9,7 +9,7 @@ You can check out the site live here: https://shangguanw.com/
 
 React, Tailwind CSS, Material UI
 
-If you want to read more about my development process, check out my blog: (Build Personal Portfolio Website for Developers)[https://dev.to/shangguanwang/build-personal-portfolio-website-for-developers-4jb2]
+If you want to read more about my development process, check out my blog: [Build Personal Portfolio Website for Developers](https://dev.to/shangguanwang/build-personal-portfolio-website-for-developers-4jb2)
 
 ## Instructions
 
