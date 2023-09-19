@@ -39,9 +39,9 @@ const ProjectContent = () => {
   const project4 = {
     imgUrl: comingsoonimg,
     imgAlt: "Coming Soon Screenshot",
-    title: "Crypto Dashboard (WIP)",
-    description: "Web app that aggregates crypto prices and news",
-    techStack: ["React", "Redux", "API"],
+    title: "Personal Finance App (WIP)",
+    description: "Track net worth and saving goals with visualization dashboard",
+    techStack: ["TypeScript", "React", "Redux", "Material UI", "Tailwind CSS"],
   };
   return (
     <div id="projects">

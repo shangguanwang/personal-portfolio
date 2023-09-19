@@ -32,7 +32,7 @@ const Navbar = () => {
             <li className="mx-4">
               <a
                 className="nav_link"
-                href="https://github.com/shangguanwang/resume/blob/e3ab790f7b92764969622b7457b6e875904d8e13/Resume_Shangguan_Wang.pdf"
+                href="https://drive.google.com/file/d/1OwNQGYlSoQPEiPpITmQdGRMjrk0NYL-0/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
