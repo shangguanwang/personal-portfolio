@@ -29,8 +29,6 @@ const ExperienceTab = () => {
     <div>
       <Tabs variant="scrollable" value={value} onChange={handleChange}>
         <Tab label="Skills"></Tab>
-        <Tab label="Experience"></Tab>
-        <Tab label="Education"></Tab>
         <Tab label="Achievements"></Tab>
       </Tabs>
       {/* Tab 1 Skill Content */}
@@ -43,76 +41,8 @@ const ExperienceTab = () => {
           </ul>
         </Box>
       )}
-      {/* Tab 2 Experience Content */}
-      {value === 1 && (
-        <Box style={{ height: "160px" }}>
-          <div>
-            <p className="text-gray-600">2023-Present</p>
-            <p>
-              <a
-                href="https://the-collab-lab.codes/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                The Collab Lab
-              </a>
-              | Software Engineer
-            </p>
-          </div>
-          <div className="mt-1"></div>
-          <div>
-            <p className="text-gray-600">2019-2023</p>
-            <p>
-              <a
-                href="https://www.accenture.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Accenture
-              </a>
-              | Bid Manager
-            </p>
-          </div>
-          <div className="mt-1">
-            <p className="text-gray-600">2018</p>
-            <p>
-              <a
-                href="https://www.geico.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Geico
-              </a>{" "}
-              | Analytics Intern
-            </p>
-          </div>
-        </Box>
-      )}
-      {/* Tab 3 Education Content */}
-      {value === 2 && (
-        <Box style={{ height: "160px" }}>
-          <div>
-            <p className="text-gray-600">2023</p>
-            <p>Scrimba | Frontend Developer Career Path Bootcamp</p>
-            <p>
-              FreeCodeCamp |
-              <a
-                href="https://www.freecodecamp.org/certification/Shangguan_Wang/responsive-web-design"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Responsive Web Design Certificate
-              </a>
-            </p>
-          </div>
-          <div className="mt-1">
-            <p className="text-gray-600">2015-2019</p>
-            <p>University of Iowa | Business Analytics</p>
-          </div>
-        </Box>
-      )}
       {/* Tab 4 Achivements Content */}
-      {value === 3 && (
+      {value === 1 && (
         <Box style={{ height: "160px" }}>
           <ul className="list-disc text-left">
             <li>
