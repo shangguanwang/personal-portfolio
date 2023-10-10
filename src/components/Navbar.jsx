@@ -1,23 +1,29 @@
 import React from "react";
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <header>
       {/* make nav bar stick at the top and is above any other content on the page, take the full width, and add a shadow effect */}
-      <div className="z-50 fixed bg-white w-full shadow">
+      <div className="fixed z-50 bg-white w-full shadow">
         <nav className="flex justify-center lg:justify-end">
           {/* move nav bar to the right of the page */}
           <ul className="flex py-3">
             {/* make nav bar horizontal flex */}
             <li className="mx-4">
-              <a className="nav_link" href="#about">
+              <NavLink to="/#about" className="nav_link">
                 About
-              </a>
+              </NavLink>
             </li>
             <li className="mx-4">
-              <a className="nav_link" href="#projects">
+              <NavLink to="/#projects" className="nav_link">
                 Projects
-              </a>
+              </NavLink>
+            </li>
+            <li className="mx-4">
+              <NavLink to="/experience" className="nav_link">
+                Experience
+              </NavLink>
             </li>
             <li className="mx-4">
               <a
@@ -27,16 +33,6 @@ const Navbar = () => {
                 rel="noopener noreferrer"
               >
                 Blog
-              </a>
-            </li>
-            <li className="mx-4">
-              <a
-                className="nav_link"
-                href="https://drive.google.com/file/d/1OwNQGYlSoQPEiPpITmQdGRMjrk0NYL-0/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Resume
               </a>
             </li>
           </ul>
