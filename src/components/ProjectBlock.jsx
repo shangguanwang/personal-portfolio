@@ -42,7 +42,7 @@ const Projects = ({ projectdata, isBlur }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={linksvg} className="cursor-pointer" alt="" />
+                  <img src={linksvg} className="cursor-pointer" alt="link icon image" aria-label="project live link" />
                 </a>
                 <a
                   className="w-10 h-10 hover:animate-bounce"
@@ -50,7 +50,7 @@ const Projects = ({ projectdata, isBlur }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={githubsvg} className="cursor-pointer" alt="" />
+                  <img src={githubsvg} className="cursor-pointer" alt="github icon image" aria-label="project github code repository link" />
                 </a>
               </div>
             )}

@@ -48,7 +48,8 @@ const Hero = () => {
                 <img
                   className="w-6 lg:w-8 hover:animate-pulse"
                   src={linkedin}
-                  alt="social icon"
+                  alt="linkedin icon"
+                  aria-label="Open my Linkedin"
                 ></img>
               </a>
               <a
@@ -59,7 +60,8 @@ const Hero = () => {
                 <img
                   className="w-6 lg:w-8 hover:animate-pulse"
                   src={githubsvg}
-                  alt="social icon"
+                  alt="github icon"
+                  aria-label="Open my Github"
                 ></img>
               </a>
             </div>
