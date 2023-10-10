@@ -15,7 +15,7 @@ const About = () => {
         />
       </div>
       {/*About Bio Text */}
-      <div className="pt-10 mx-15 pb-4 lg:my-4">
+      <div className="mx-15 pb-4 lg:my-4">
         <div id="subsection-title">
           <h1 className="text-left text-lg lg:text-2xl font-bold">About</h1>
         </div>
