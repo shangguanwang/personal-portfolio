@@ -11,14 +11,14 @@ const Navbar = () => {
           <ul className="flex py-3">
             {/* make nav bar horizontal flex */}
             <li className="mx-4">
-              <NavLink to="/#about" className="nav_link">
-                About
-              </NavLink>
+              <a href="#about" className="nav_link">
+              About
+              </a>
             </li>
             <li className="mx-4">
-              <NavLink to="/#projects" className="nav_link">
+              <a href="/#projects" className="nav_link">
                 Projects
-              </NavLink>
+              </a>
             </li>
             <li className="mx-4">
               <NavLink to="/experience" className="nav_link">
