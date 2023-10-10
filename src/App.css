@@ -19,6 +19,14 @@
   opacity: 1;
 }
 
+.nav_link.active {
+  text-decoration-thickness: 0.22em;
+	text-underline-offset: 0.1em;
+	text-underline-offset: 0.2em;
+	font-weight: bold;
+	text-decoration: underline orange 5px;
+}
+
 /* Job Title Blink Color Effect */
 .title_blink {
   text-shadow: 0 0 10px orange;
@@ -32,8 +40,8 @@
 }
 
 /* Subsection Border */
-#subsection-title {
-  border-bottom:4px solid orange;
+.subsection-title {
+  border-bottom:6px solid orange;
   display: table-cell; /* restrict border width to text width */
   width:100px;
 }

@@ -48,7 +48,7 @@ const ProjectContent = () => {
     <div id="projects">
       <div className="py-8 bg-stone-200 flex flex-col justify-center">
         {/* Subtitle */}
-        <div id="subsection-title" className="ml-4 lg:ml-24">
+        <div className="subsection-title ml-4 lg:ml-24">
           <h1 className="text-left text-lg lg:text-2xl font-bold pt-4">
             Projects
           </h1>
