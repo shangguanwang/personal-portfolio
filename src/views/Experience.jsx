@@ -7,7 +7,7 @@ const Experience = () => {
     <div className="ml-2 lg:ml-6">
           <h2 className='text-3xl font-bold pt-20 mb-3'>Experience</h2>
         <a
-                className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+                className="btn"
                 href="https://drive.google.com/file/d/1OwNQGYlSoQPEiPpITmQdGRMjrk0NYL-0/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"

@@ -3,7 +3,7 @@ import TechStackBadge from "./TechStackBadge";
 import githubsvg from "../assets/svgs/github.svg";
 import linksvg from "../assets/svgs/link.svg";
 
-const Projects = ({ projectdata, isBlur }) => {
+const Projects = ({ projectdata, readmore, isBlur }) => {
   const { imgUrl, imgAlt, title, description, techStack, liveUrl, githubUrl } =
     projectdata; //Props Destructuring
 
@@ -35,14 +35,14 @@ const Projects = ({ projectdata, isBlur }) => {
             </ul>
             {/*Live Link and Github Link Icons */}
             {!isBlur && (
-              <div className="flex pt-5 justify-center">
+              <div className="flex pt-5 gap-10 justify-center items-center">
                 <a
-                  className="w-10 h-10 mr-8 hover:animate-bounce"
+                  className="w-10 h-10 hover:animate-bounce"
                   href={liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={linksvg} className="cursor-pointer" alt="link icon image" aria-label="project live link" />
+                  <img src={linksvg} className="cursor-pointer" alt="link icon" aria-label="project live link" />
                 </a>
                 <a
                   className="w-10 h-10 hover:animate-bounce"
@@ -50,8 +50,11 @@ const Projects = ({ projectdata, isBlur }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={githubsvg} className="cursor-pointer" alt="github icon image" aria-label="project github code repository link" />
+                  <img src={githubsvg} className="cursor-pointer" alt="github icon" aria-label="project github code repository link" />
                 </a>
+                <div>
+                {readmore}
+                </div>
               </div>
             )}
           </div>
