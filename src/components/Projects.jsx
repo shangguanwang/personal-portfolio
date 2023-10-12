@@ -1,24 +1,14 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 import ProjectBlock from "./ProjectBlock";
-
+import { berrycartData } from "../assets/data/berryCartData";
 // Project Demo Screenshot
-import berryCartimg from "../assets/images/berrycart-screenshot.png";
 import littlejoy from "../assets/images/little-joy-screenshot.png";
 import taskyimg from "../assets/images/tasky-screenshot.png";
 import comingsoonimg from "../assets/images/coming-soon.png";
 import { Link } from "react-router-dom";
 
 const ProjectContent = () => {
-  const project1 = {
-    imgUrl: berryCartimg,
-    imgAlt: "Little Joy App Screenshot",
-    title: "BerryCart Smart Shopping List",
-    description: "a personalized shopping list to manage your grocery items in one place.",
-    techStack: ["React", "JavaScript", "Firebase", "Tailwind CSS", "Daisy UI"],
-    liveUrl: "https://tcl-63-smart-shopping-list.web.app/",
-    githubUrl: "https://github.com/the-collab-lab/tcl-63-smart-shopping-list",
-  };
   const project2 = {
     imgUrl: littlejoy,
     imgAlt: "Little Joy App Screenshot",
@@ -56,7 +46,7 @@ const ProjectContent = () => {
         </div>
         {/* Projects */}
         <Fade duration="1500" triggerOnce="true">
-          <ProjectBlock projectdata={project1} readmore={<Link to="/project-berrycart-details" className="btn">Read More</Link>} />
+          <ProjectBlock projectdata={berrycartData} readmore={<Link to="/project-berrycart-details" className="btn">Read More</Link>} />
           <ProjectBlock projectdata={project2} />
           <ProjectBlock projectdata={project3} />
           <ProjectBlock projectdata={project4} isBlur={true} />
