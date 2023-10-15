@@ -9,11 +9,14 @@ import linksvg from "../assets/svgs/link.svg";
 import youtubesvg from "../assets/svgs/youtube.svg";
 import devtosvg from "../assets/svgs/devto.svg";
 import { Tooltip } from '@mui/material';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import { NavLink } from 'react-router-dom';
 
 
 const BerryCart = () => {
     const {techStack, liveUrl, githubUrl, youtubeUrl, blogUrl} = berrycartData;
   return (
+    <>
     <div className="ml-2 lg:ml-6">
         <h2 className='text-3xl font-bold pt-20 mb-3 tracking-wide'>BerryCart</h2>
         <div className='flex justify-between items-center max-w-[110ch]'>
@@ -91,6 +94,13 @@ const BerryCart = () => {
             </p>
         </section>
     </div>
+    {/* GO BACK BUTTON */}
+    <div className='fixed z-50 top-1/2 right-4 transform -translate-y-1/2 p-2'>
+        <NavLink to="/" aria-label='Go back to homepage'>
+            <ArrowBackIosIcon fontSize='large'/>
+        </NavLink>
+    </div>
+    </>
   )
 }
 
