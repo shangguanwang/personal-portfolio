@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import TechStackBadge from '../components/TechStackBadge';
 import { berrycartData } from '../assets/data/berryCartData';
 import homepageImg from '../assets/images/berrycart-homepage.png';
@@ -15,7 +15,10 @@ import { NavLink } from 'react-router-dom';
 
 const BerryCart = () => {
     const {techStack, liveUrl, githubUrl, youtubeUrl, blogUrl} = berrycartData;
-  return (
+    useEffect(()=>{
+        window.scrollTo(0,0);
+    },[])
+    return (
     <>
     <div className="ml-2 lg:ml-6">
         <h2 className='text-3xl font-bold pt-20 mb-3 tracking-wide'>BerryCart</h2>

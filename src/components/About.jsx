@@ -11,7 +11,7 @@ const About = () => {
         <img
           src={headshot}
           className="rounded-full min-w-[100px] mx-auto"
-          alt="headshot profile picture"
+          alt="headshot"
         />
       </div>
       {/*About Bio Text */}
