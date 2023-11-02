@@ -4,7 +4,7 @@ export const berrycartData = {
     imgUrl: berryCartimg,
     imgAlt: "berryCart App Screenshot",
     title: "BerryCart Smart Shopping List",
-    description: "a personalized shopping list to manage your grocery items in one place.",
+    description: "a personalized shopping list to manage your grocery items in one place",
     techStack: ["React", "JavaScript", "Firebase", "Tailwind CSS", "Daisy UI"],
     liveUrl: "https://tcl-63-smart-shopping-list.web.app/",
     githubUrl: "https://github.com/the-collab-lab/tcl-63-smart-shopping-list",
