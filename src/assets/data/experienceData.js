@@ -1,8 +1,17 @@
+import swoovyLogo from '../images/swoovy-logo.png';
 import collabLabLogo from '../images/collablab-logo.png';
 import acnLogo from '../images/accenture-logo.png';
 import uiowaLogo from '../images/uiowa-logo.jpeg';
 
 export const experienceData = [
+    {companyLogo: swoovyLogo, 
+        companyName:"Swoovy",
+        companyLink: "https://www.swoovy.com/",
+        jobTitle:"Frontend Developer, Intern",
+        duration:"10/2023-Present",
+        bullets:["Plan, develop and deploy new features and bug fixes to elevate user interfaces and improve user experience",
+        "Use Bitbucket, Jira, and AGILE methodologies in a fast-paced startup environment to expedite product delivery",
+    "Tech Stack: React, TypeScript, JavaScript, CSS, Git, Ant Design"]},
     {companyLogo: collabLabLogo, 
     companyName:"The Collab Lab",
     companyLink: "https://the-collab-lab.codes/",

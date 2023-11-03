@@ -38,13 +38,13 @@ const About = () => {
           <br />
           I'm currently working at{" "}
           <a
-            href="https://the-collab-lab.codes/"
+            href="https://www.swoovy.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            The Collab Lab{" "}
+            Swoovy{" "}
           </a>
-          as a software engineer.
+          as a frontend engineer.
           <br />
           When I'm not coding, I record podcast🎙️, make memes🖼️, and write
           blogs🖊️.
