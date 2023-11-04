@@ -1,30 +1,13 @@
 import React, { useState } from "react";
 import { Box, Tab, Tabs } from "@mui/material";
-import TechStackBadge from "./TechStackBadge";
-
-const skillLst = [
-  "React.js",
-  "JavaScript",
-  "TypeScript",
-  "HTML",
-  "CSS",
-  "Tailwind CSS",
-  "Material UI",
-  "Python",
-  "SQL",
-  "Firebase",
-  "Git",
-  "Github",
-];
+import Skills from './Skills';
 
 // Setup Use State for Tab Flip
 const ExperienceTab = () => {
   const [value, setValue] = useState(0);
-
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
   return (
     <div>
       <Tabs variant="scrollable" value={value} onChange={handleChange}>
@@ -34,11 +17,7 @@ const ExperienceTab = () => {
       {/* Tab 1 Skill Content */}
       {value === 0 && (
         <Box style={{ height: "160px" }}>
-          <ul className="pt-5 flex flex-wrap">
-            {skillLst.map((itm) => (
-              <TechStackBadge skill={itm} />
-            ))}
-          </ul>
+          <Skills />
         </Box>
       )}
       {/* Tab 4 Achivements Content */}
