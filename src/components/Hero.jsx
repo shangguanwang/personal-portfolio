@@ -4,8 +4,9 @@ import { Fade, Slide } from "react-awesome-reveal";
 import lottie from "lottie-web";
 
 import About from "./About";
-import linkedin from "../assets/images/linkedin.png";
-import githubsvg from "../assets/svgs/github.svg";
+import linkedin from "../assets/svgs/linkedin.svg";
+import github from "../assets/svgs/github.svg";
+import devto from "../assets/svgs/devto.svg";
 
 const Hero = () => {
   const container = useRef(null);
@@ -38,15 +39,14 @@ const Hero = () => {
               <span className="title_blink">Frontend Developer</span>
             </h1>
             {/* Social Icon */}
-            <div className="flex justify-center items-center mt-1">
+            <div className="flex justify-center items-center gap-4 mt-1">
               <a
                 href="https://www.linkedin.com/in/shangguan-wang/"
                 target="_blank"
-                className="mr-8"
                 rel="noopener noreferrer"
               >
                 <img
-                  className="w-6 lg:w-8 hover:animate-pulse"
+                  className="hover:animate-pulse"
                   src={linkedin}
                   alt="linkedin icon"
                   aria-label="Open my Linkedin"
@@ -58,10 +58,21 @@ const Hero = () => {
                 rel="noopener noreferrer"
               >
                 <img
-                  className="w-6 lg:w-8 hover:animate-pulse"
-                  src={githubsvg}
+                  className="hover:animate-pulse"
+                  src={github}
                   alt="github icon"
                   aria-label="Open my Github"
+                ></img>
+              </a>
+              <a
+                href="https://dev.to/shangguanwang"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img
+                  className="hover:animate-pulse"
+                  src={devto}
+                  alt="devti icon"
+                  aria-label="Open my Devto Blog"
                 ></img>
               </a>
             </div>
