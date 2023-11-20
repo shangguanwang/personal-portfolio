@@ -36,6 +36,15 @@ const Hero = () => {
               <span className="title_blink">Frontend Developer</span>
             </h1>
             {/* Social Icon */}
+            <div className="flex justify-center my-2">
+              <a className="inline-flex items-center px-4 py-1 bg-amber-600 text-white font-semibold gap-2 rounded border-4 border-amber-600 hover:bg-white hover:text-amber-700"
+              href="mailto:shangguan.dev@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer">
+                Hire me
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="2em" height="2em" viewBox="0 0 24 24"><path d="M22,5V9L12,13,2,9V5A1,1,0,0,1,3,4H21A1,1,0,0,1,22,5ZM2,11.154V19a1,1,0,0,0,1,1H21a1,1,0,0,0,1-1V11.154l-10,4Z"/></svg>
+              </a>
+            </div>
             <div className="flex justify-center items-center gap-4 mt-1">
               <a
                 href="https://www.linkedin.com/in/shangguan-wang/"
