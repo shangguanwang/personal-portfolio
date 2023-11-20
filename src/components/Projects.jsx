@@ -5,7 +5,6 @@ import { berrycartData } from "../assets/data/berryCartData";
 // Project Demo Screenshot
 import littlejoy from "../assets/images/little-joy-screenshot.png";
 import nftmarketplaceimg from "../assets/images/NFT-marketplace-screenshot.png";
-import comingsoonimg from "../assets/images/coming-soon.png";
 import { Link } from "react-router-dom";
 
 const ProjectContent = () => {
@@ -27,13 +26,6 @@ const ProjectContent = () => {
     liveUrl: "https://littlejoy.netlify.app/",
     githubUrl: "https://github.com/shangguanwang/little-joy-firebase",
   };
-  const project4 = {
-    imgUrl: comingsoonimg,
-    imgAlt: "Coming Soon Screenshot",
-    title: "Personal Finance App (WIP)",
-    description: "Track net worth and saving goals with visualization dashboard",
-    techStack: ["TypeScript", "React", "Redux", "Material UI", "Tailwind CSS"],
-  };
   return (
     <div id="projects">
       <div className="py-8 bg-stone-200 flex flex-col justify-center">
@@ -48,7 +40,6 @@ const ProjectContent = () => {
           <ProjectBlock projectdata={berrycartData} readmore={<Link to="/project-berrycart-details" className="btn">Read More</Link>} />
           <ProjectBlock projectdata={project2} />
           <ProjectBlock projectdata={project3} />
-          <ProjectBlock projectdata={project4} isBlur={true} />
         </Fade>
       </div>
     </div>

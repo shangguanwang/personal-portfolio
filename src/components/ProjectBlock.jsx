@@ -3,7 +3,7 @@ import TechStackBadge from "./TechStackBadge";
 import githubsvg from "../assets/svgs/github.svg";
 import linksvg from "../assets/svgs/link.svg";
 
-const Projects = ({ projectdata, readmore, isBlur }) => {
+const Projects = ({ projectdata, readmore }) => {
   const { imgUrl, imgAlt, title, description, techStack, liveUrl, githubUrl } =
     projectdata; //Props Destructuring
 
@@ -15,9 +15,7 @@ const Projects = ({ projectdata, readmore, isBlur }) => {
         <div className="flex flex-col items-center lg:flex-row lg:items-start">
           {/*Project Screenshot */}
           <img
-            className={`lg:mx-24 pt-5 rounded-lg w-1/3 ${
-              isBlur ? "filter blur-sm hover:blur-none" : ""
-            }`}
+            className="lg:mx-24 pt-5 rounded-lg w-1/3"
             src={imgUrl}
             alt={imgAlt}
           />
@@ -34,7 +32,6 @@ const Projects = ({ projectdata, readmore, isBlur }) => {
               ))}
             </ul>
             {/*Live Link and Github Link Icons */}
-            {!isBlur && (
               <div className="flex pt-5 gap-10 justify-center items-center">
                 <a
                   className="w-10 h-10 hover:animate-bounce"
@@ -56,7 +53,6 @@ const Projects = ({ projectdata, readmore, isBlur }) => {
                 {readmore}
                 </div>
               </div>
-            )}
           </div>
         </div>
       </div>
